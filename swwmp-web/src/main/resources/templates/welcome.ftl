@@ -12,5 +12,13 @@
         <br>
         Message: ${message}
     </div>
+    <ul>
+    	<@testDirective>
+			<#list testList as item>
+				<li>${item}</li>
+			</#list>
+		</@testDirective>
+    </ul>
 </div>
+
 </@layout.myLayout>
